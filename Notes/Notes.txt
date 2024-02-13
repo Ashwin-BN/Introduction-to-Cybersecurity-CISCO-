@@ -1,0 +1,55 @@
+# social engineering attacks:
+----------------------------
+1.Pretexting: This is when an attacker calls an individual and lies to them in an attempt to gain access to privileged data.
+For example, pretending to need a person’s personal or financial data in order to confirm their identity.
+
+2.Tailgating: This is when an attacker quickly follows an authorized person into a secure, physical location.
+
+3.Something for something (quid pro quo): This is when an attacker requests personal information from a person in exchange for something, like a free gift.
+
+
+# Denial-of-Service:
+-------------------
+Denial-of-Service (DoS) attacks are a type of network attack that is relatively simple to carry out, even by an unskilled attacker. A DoS attack results in some sort of interruption of network service to users, devices or applications.
+
+
+# Distributed DoS:
+-----------------
+A Distributed DoS (DDoS) attack is similar to a DoS attack but originates from multiple, coordinated sources. For example:
+
+An attacker builds a network (botnet) of infected hosts called zombies, which are controlled by handler systems.
+The zombie computers will constantly scan and infect more hosts, creating more and more zombies.
+When ready, the hacker will instruct the handler systems to make the botnet of zombies carry out a DDoS attack.
+
+
+# Botnet:
+--------
+A bot computer is typically infected by visiting an unsafe website or opening an infected email attachment or infected media file. A botnet is a group of bots, connected through the Internet, that can be controlled by a malicious individual or group. It can have tens of thousands, or even hundreds of thousands, of bots that are typically controlled through a command and control server.
+
+These bots can be activated to distribute malware, launch DDoS attacks, distribute spam email, or execute brute-force password attacks. Cybercriminals will often rent out botnets to third parties for nefarious purposes.
+
+Many organizations. like Cisco, force network activities through botnet traffic filters to identify any botnet locations.
+
+
+# On-Path Attacks
+-----------------
+On-path attackers intercept or modify communications between two devices, such as a web browser and a web server, either to collect information from or to impersonate one of the devices.
+
+This type of attack is also referred to as a man-in-the-middle or man-in-the-mobile attack.
+
+1. MitM: Happens when a cybercriminal takes control of a device without the users knowledge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

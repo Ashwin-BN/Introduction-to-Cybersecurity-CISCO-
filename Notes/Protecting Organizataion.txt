@@ -1,0 +1,333 @@
+# Security Appliances
+---------------------
+Security appliances can be standalone devices like a router or software tools that are run on a network device. They fall into six general categories:
+
+1. Routers:
+While routers are primarily used to interconnect various network segments together, they usually also provide basic traffic filtering capabilities. This information can help you define which computers from a given network segment can communicate with which network segments.
+
+2. Firewalls
+Firewalls can look deeper into the network traffic itself and identify malicious behavior that has to be blocked. Firewalls can have sophisticated security policies applied to the traffic that is passing through them.
+
+3. Intrusion prevention systems
+IPS systems use a set of traffic signatures that match and block malicious traffic and attacks.
+
+4. Virtual private networks
+VPN systems let remote employees use a secure encrypted tunnel from their mobile computer and securely connect back to the organization’s network. VPN systems can also securely interconnect branch offices with the central office network.
+
+5. Antimalware or antivirus
+These systems use signatures or behavioral analysis of applications to identify and block malicious code from being executed.
+
+6. Other security devices
+Other security devices include web and email security appliances, decryption devices, client access control servers and security management systems.
+
+
+# Firewlls
+----------
+- Control and filter network communications, deciding which are allowed in and out of a device or network.
+- Can be host-based (protecting a single computer) or network-based (protecting an entire network).
+- Evolved with increasing attack sophistication, leading to the development of various types catering to different purposes.
+
+1. Network layer firewall
+This filters communications based on source and destination IP addresses.
+
+2. Transport layer firewall
+Filters communications based on source and destination data ports, as well as connection states.
+
+3. Application layer firewall
+Filters communications based on an application, program or service.
+
+4. Context aware layer firewall
+Filters communications based on the user, device, role, application type and threat profile.
+
+5. Proxy server
+Filters web content requests like URLs, domain names and media types.
+
+6. Reverse proxy server
+Placed in front of web servers, reverse proxy servers protect, hide, offload and distribute access to web servers.
+
+7. Network address translation(NAT) firewall
+This firewall hides or masquerades the private addresses of network hosts. filters communications based on source and destination IP addresses.
+
+8. Host-based firewall
+Filters ports and system service calls on a single computer operating system.
+
+
+# Port Scanning
+---------------
+- Involves probing a device for open ports, which are application identifiers.
+- Can be maliciously used for reconnaissance, identifying OS and running services.
+- Also used innocuously by network admins to verify network security policies.
+- Essential for understanding network vulnerabilities but can pose security risks if abused.
+
+1. Open/Accepted: Port or service accessible by other network devices.
+
+2. Closed/Denied/Not Listening: Port or service not running, hence not exploitable.
+
+3. Filtered/Dropped/Blocked: Access blocked by a firewall, making it inaccessible for exploitation
+
+
+# Intrusion Detection and Prevention Systems
+--------------------------------------------
+Intrusion detection systems (IDSs) and intrusion prevention systems (IPSs) are security measures deployed on a network to detect and prevent malicious activities.
+
+1. Intrusion Detection Systems (IDS):
+- Dedicated network devices or software tools integrated into servers, firewalls, or host computer operating systems.
+- Scan data against a database of rules or attack signatures to detect malicious traffic.
+- If a match is found, logs detection and generates alerts for network administrators.
+- Does not take action to prevent attacks; focuses on detection, logging, and reporting.
+- Typically placed offline to avoid network latency, with data copied or mirrored by a switch for detection.
+
+2. Intrusion Prevention Systems (IPS) and Snort:
+- IPS like Snort can block or deny traffic based on rule or signature matches.
+- Cisco's Sourcefire, a commercial version of Snort, offers comprehensive features:
+  - Real-time traffic and port analysis.
+  - Logging and content searching.
+  - Detection of probes, attacks, and port scans.
+  - Integration with third-party tools for reporting, performance, and log analysis.
+
+
+# Real-Time Detection:
+---------------------
+Detecting attacks in real time requires actively scanning for attacks using firewall and IDS/IPS network devices. Next generation client and server malware detection with connections to online global threat centers must also be used. Today, active scanning devices and software must detect network anomalies using context-based analysis and behavior detection.
+
+DDoS is one of the biggest attack threats requiring real-time detection and response. For many organizations, regularly occurring DDoS attacks cripple Internet servers and network availability. These attacks are extremely difficult to defend against because the attacks originate from hundreds, even thousands, of zombie hosts, and the attacks appear as legitimate traffic.
+
+
+# Protecting Against Malware:
+----------------------------
+- Utilize enterprise-level advanced malware detection solutions like Cisco’s Advanced Malware Protection (AMP) Threat Grid.
+- Deploy as client/server software on host endpoints, standalone servers, or other network security devices.
+- Analyzes vast numbers of files and correlates them against extensive malware artifacts to identify APT behaviors.
+- Provides a comprehensive view of malware attacks, campaigns, and distribution, enhancing defense against sophisticated threats.
+
+
+# Security Best Practices:
+-------------------------
+1. Perform a risk assessment:
+Knowing and understanding the value of what you are protecting will help to justify security expenditures.
+
+2. Create a security policy:
+Create a policy that clearly outlines the organization’s rules, job roles, and responsibilities and expectations for employees.
+
+3. Physical security measures:
+Restrict access to networking closets and server locations, as well as fire suppression.
+
+4. Human resources security measures:
+Background checks should be completed for all employees.
+
+5. Perform and test backups:
+Back up information regularly and test data recovery from backups.
+
+6. Maintain security patches and updates:
+Regularly update server, client and network device operating systems and programs.
+
+7. Employ access controls:
+Configure user roles and privilege levels as well as strong user authentication.
+
+8. Regularly test incident response:
+Employ an incident response team and test emergency response scenarios.
+
+9. Implement a network monitoring, analytics and management tool:
+Choose a security monitoring solution that integrates with other technologies.
+
+10. Implement network security devices:
+Use next generation routers, firewalls and other security appliances.
+
+11. Implement a comprehensive endpoint security solution:
+Use enterprise level antimalware and antivirus software.
+
+12. Educate users:
+Provide training to employees in security procedures.
+
+One of the most widely known and respected organizations for cybersecurity training is the SANS Institute. Click here(https://www.sans.org/about/) to learn more about SANS and the types of training and certifications they offer.
+
+13. Encrypt data:
+Encrypt all sensitive organizational data,
+
+
+
+# Behavior-Based Security:
+-------------------------
+1. Honeypots
+A honeypot is a behavior-based detection tool that lures the attacker in by appealing to their predicted pattern of malicious behavior. Once the attacker is inside the honeypot, the network administrator can capture, log and analyze their behavior so that they can build a better defense.
+
+2. Cisco’s Cyber Threat Defense Solution Architecture
+This security architecture uses behavior-based detection and indicators to provide greater visibility, context and control. The aim is to know who is carrying out the attack, what type of attack they are performing and where, when and how the attack is taking place. This security architecture uses many security technologies to achieve this goal.
+
+
+# NetFlow:
+---------
+- Gathers information on data flow in a network, including devices and users.
+- Tracks data entering, leaving, and moving within the network.
+- Integral for behavior-based detection and analysis.
+- Implemented in switches, routers, and firewalls.
+- Data sent to NetFlow collectors for storage and analysis.
+- Collects over 90 attributes, like source and destination IP addresses.
+- Helps establish baseline behaviors for network activities.
+
+
+# Penetration Testing (Pen Testing) Process:
+-------------------------------------------
+1. Planning:
+- Gather information about the target system or network, vulnerabilities, and potential exploits.
+- Conduct passive or active reconnaissance and vulnerability research.
+
+2. Scanning:
+- Perform active reconnaissance to identify potential weaknesses.
+- Techniques include port scanning, vulnerability scanning, and enumeration.
+ a) port scanning to identify potential access points into a target system
+ b) vulnerability scanning to identify potential exploitable vulnerabilities of a particular target
+ c) establishing an active connection to a target (enumeration) to identify the user account, system account and admin account.
+
+
+3. Gaining Access:
+- Attempt to gain access to the target system.
+- Methods include launching exploits, breaching physical barriers, social engineering, exploiting website/software/hardware vulnerabilities, and cracking weak encryption.
+
+4. Maintaining Access:
+- Maintain access to the target system to identify vulnerable data and systems.
+- Remain undetected using backdoors, Trojan horses, rootkits, and covert channels.
+
+5. Analysis and Reporting:
+- Provide feedback through a report recommending updates to improve security.
+- Suggestions may include updates to products, policies, and training.
+
+
+# Impact Reduction:
+------------------
+Actions to Take After a Security Breach:
+
+1. Communicate the Issue: 
+- Internally inform all employees and provide clear instructions.
+- Externally inform clients through direct communication and official announcements.
+
+2. Be Sincere and Accountable:
+- Respond honestly and genuinely, taking responsibility for any organizational faults.
+
+3. Provide the Details:
+- Explain openly why the breach occurred and what information was compromised.
+- Cover any client costs associated with identity theft services.
+
+4. Find the Cause:
+- Investigate to understand the root cause and facilitators of the breach.
+- May require hiring forensics experts for detailed research.
+
+5. Apply Lessons Learned:
+- Implement findings from forensic investigations to prevent future breaches.
+
+6. Check, and Check Again:
+- Ensure all systems are clean and free of backdoors or compromises.
+- Verify that no vulnerabilities have been left behind by attackers.
+
+7. Educate:
+- Raise awareness among employees, partners, and clients on preventing future breaches.
+- Provide training and resources to enhance security practices.
+
+
+# What is Risk Management:
+-------------------------
+Risk management is the systematic process of identifying, assessing, and mitigating risks to reduce their impact on an organization. It involves:
+
+1. Frame the Risk:
+Recognizing potential risks such as processes, products, attacks, or disruptions that could negatively impact the organization's objectives or assets.
+
+2. Assess the Risk:
+Evaluating the severity of each threat to prioritize risks based on their potential impact, either quantitatively (financial impact) or qualitatively (operational impact).
+
+3. Respond to the Risk:
+Creating strategies to manage risks, including eliminating, mitigating, transferring, or accepting them, depending on their severity and cost-effectiveness.
+
+4. Monitor the Risk:
+Regularly monitoring and reassessing risks to ensure that the implemented measures remain effective and to identify any new threats that may arise.
+
+
+# Cisco's CSIRT:
+---------------
+- CSIRTs (Computer Security Incident Response Teams) are vital for handling computer security incidents effectively.
+- Cisco's CSIRT stands out for its proactive approach, offering threat assessment, mitigation planning, incident trend analysis, and security architecture review.
+- Collaboration with organizations like FIRST, NSIE, DSIE, and DNS-OARC ensures staying updated with new developments.
+- National and public CSIRT organizations, such as CERT Division of the Software Engineering Institute at Carnegie Mellon University, aid in developing, operating, and enhancing incident management capabilities.
+
+
+# Security Playbook:
+-------------------
+A security playbook serves as a comprehensive guide for organizations to effectively prevent, detect, respond to, and recover from cybersecurity incidents. It is a living document that evolves alongside emerging threats and organizational changes. Here's a concise overview of key components and best practices for creating a robust security playbook:
+
+1. Risk Identification:
+- Identify cybersecurity risks to systems, assets, data, and capabilities.
+- Regularly assess vulnerabilities and threats to stay proactive.
+
+2. Safeguards Implementation and Training:
+- Implement robust security measures, including firewalls, encryption, access controls, and intrusion detection systems.
+- Conduct regular training and awareness programs to educate personnel on cybersecurity best practices and protocols.
+
+3. Response Plan:
+- Develop a flexible response plan that outlines steps to minimize the impact and damage in the event of a security breach.
+- Define roles and responsibilities of team members during incident response.
+- Establish communication protocols for internal and external stakeholders.
+
+4. Post-Breach Measures:
+- Define security measures and processes to be implemented in the aftermath of a security breach, such as forensic analysis, system restoration, and data recovery.
+- Conduct thorough post-incident reviews to identify lessons learned and areas for improvement.
+
+5. Automation and Standardization:
+- Automate repetitive tasks and responses to common threats using security tools and technologies.
+- Standardize incident detection and response procedures to ensure consistency and efficiency.
+
+6. Documentation and Reporting:
+- Document incident detection and response processes in a clear and concise manner.
+- Include templates for incident reports, logs, and communication templates.
+- Provide summary information, trends, statistics, and key metrics for easy reference.
+
+7. Continuous Improvement:
+- Regularly review and update the security playbook to reflect changes in technology, threats, and organizational structure.
+- Incorporate feedback from incident response exercises and real-world incidents to enhance effectiveness.
+
+By following these guidelines and best practices, organizations can create a robust security playbook that enables them to effectively mitigate cybersecurity risks and respond swiftly to security incidents.
+
+
+# Tools for Incident Detection and Prevention:
+---------------------------------------------
+1. Security Information and Event Management (SIEM) system:
+- Function: Collects and analyzes security alerts, logs, and other real-time and historical data from security devices on the network.
+- Purpose: Facilitates early detection of cyber attacks by correlating events and identifying patterns indicative of security threats.
+
+2. Data Loss Prevention (DLP) system:
+- Function: Monitors and protects data in three states: data in use (accessed by a user), data in motion (traveling through the network), and data at rest (stored in a network or device).
+- Purpose: Prevents sensitive data from being stolen or leaked from the network, enhancing data security and compliance with regulations.
+
+
+# NOTE:
+------
+-IPS: can block or deny traffic based on a positive rule or signature match.
+
+-IDS: scans data against a database of rules or attack signatures, looking for malicious traffic.
+
+-DLP: system is designed to stop sensitive data from being stolen from or escaping a network. 
+
+-SIEM: system collects and analyzes security alerts, logs and other real-time and historical data from security devices on the network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

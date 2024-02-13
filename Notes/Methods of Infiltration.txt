@@ -1,0 +1,90 @@
+# social engineering attacks:
+----------------------------
+Social engineering is the manipulation of people into performing actions or divulging confidential information. Social engineers often rely on people’s willingness to be helpful, but they also prey on their weaknesses. For example, an attacker will call an authorized employee with an urgent problem that requires immediate network access and appeal to the employee’s vanity or greed or invoke authority by using name-dropping techniques in order to gain this access.
+
+
+1.Pretexting: This is when an attacker calls an individual and lies to them in an attempt to gain access to privileged data.
+For example, pretending to need a person’s personal or financial data in order to confirm their identity.
+
+2.Tailgating: This is when an attacker quickly follows an authorized person into a secure, physical location.
+
+3.Something for something (quid pro quo): This is when an attacker requests personal information from a person in exchange for something, like a free gift.
+
+
+# Denial-of-Service:
+-------------------
+Denial-of-Service (DoS) attacks are a type of network attack that is relatively simple to carry out, even by an unskilled attacker. A DoS attack results in some sort of interruption of network service to users, devices or applications.
+
+
+# Distributed DoS:
+-----------------
+A Distributed DoS (DDoS) attack is similar to a DoS attack but originates from multiple, coordinated sources. For example:
+
+An attacker builds a network (botnet) of infected hosts called zombies, which are controlled by handler systems.
+The zombie computers will constantly scan and infect more hosts, creating more and more zombies.
+When ready, the hacker will instruct the handler systems to make the botnet of zombies carry out a DDoS attack.
+
+
+# Botnet:
+--------
+A bot computer is typically infected by visiting an unsafe website or opening an infected email attachment or infected media file. A botnet is a group of bots, connected through the Internet, that can be controlled by a malicious individual or group. It can have tens of thousands, or even hundreds of thousands, of bots that are typically controlled through a command and control server.
+
+These bots can be activated to distribute malware, launch DDoS attacks, distribute spam email, or execute brute-force password attacks. Cybercriminals will often rent out botnets to third parties for nefarious purposes.
+
+Many organizations. like Cisco, force network activities through botnet traffic filters to identify any botnet locations.
+
+
+# On-Path Attacks
+-----------------
+On-path attackers intercept or modify communications between two devices, such as a web browser and a web server, either to collect information from or to impersonate one of the devices.
+
+This type of attack is also referred to as a man-in-the-middle or man-in-the-mobile attack.
+
+1. MitM: Happens when a cybercriminal takes control of a device without the users knowledge. With this level of access, an attacker can interecpt and capture user information before it is send to its intended destination. These types of attacks are often used to steal financial informations.
+
+2. MITMO: A variation of MitM. Type of attack used to take control over a user's mobile device. When infected, the mobile device is instructed to exfiltrate user-sensitive information and send is to the attackers. ZeuS is one example of a malware package with MitMo capabilities. It allows attackers to quietly capture two-step verification SMS messages that are send to users.
+
+
+# SEO Poisoning:
+---------------
+You’ve probably heard of search engine optimization or SEO which, in simple terms, is about improving an organization’s website so that it gains greater visibility in search engine results.
+
+Search engines work by presenting a list of web pages to user based their search query. These web pages are ranked according to the relevancy of their content.
+Many companies specialize in optimizing websites to better position them, attackers take advantage of popular search terms and use SEO to push malicious sites higher up the ranks of search results.
+The common goal is to increase traffic to malicious sites that may host malware or attempt social engineering.
+
+
+# Wi-Fi Password Cracking:
+-------------------------
+Hackers have other techniques up their sleeves. Some use brute-force attacks, testing possible password combinations to try and guess a password. Others are able to identify unencrypted passwords by listening in and capturing packets sent on the network. This is called network sniffing. If the password is encrypted, they may still be able to reveal it using a password cracking tool.
+
+
+# Password Attacks:
+------------------
+1. Password Spraying: This technique attempts to gain access to a system by ‘spraying’ a few commonly used passwords across a large number of accounts. For example, a cybercriminal uses 'Password123' with many usernames before trying again with a second commonly-used password, such as ‘qwerty.’
+
+This technique allows the perpetrator to remain undetected as they avoid frequent account lockouts.
+
+2. Dictionary Attacks: A hacker systematically tries every word in a dictionary or a list of commonly used words as a password in an attempt to break into a password-protected account.
+
+3. Brute-Force-Attacks: The simplest and most commonly used way of gaining access to a password-protected site, brute-force attacks see an attacker using all possible combinations of letters, numbers and symbols in the password space until they get it right.
+
+4. Rainbow Attacks:  Passwords in a computer system are not stored as plain text, but as hashed values (numerical values that uniquely identify data). A rainbow table is a large dictionary of precomputed hashes and the passwords from which they were calculated.
+Unlike a brute-force attack that has to calculate each hash, a rainbow attack compares the hash of a password with those stored in the rainbow table. When an attacker finds a match, they identify the password used to create the hash.
+
+5. Traffic Interception: Plain text or unencrypted passwords can be easily read by other humans and machines by intercepting communications.
+If you store a password in clear, readable text, anyone who has access to your account or device, whether authorized or unauthorized, can read it.
+
+
+/*********A program such as Ophcrack, L0phtCrack, THC Hydra, RainbowCrack or Medusa will then try each word and common combinations until it finds a match********/
+
+
+# Advanced Persistent Threats (APTs):
+- A sophisticated, long-term cyberattack strategy targeting specific entities.
+- Involves multiple phases, stealthy maneuvers, and advanced techniques.
+- Typically beyond the capability of individual attackers due to required skill set, resources, and persistence.
+- Often well-funded and targets organizations or nations for business or political motives.
+- Primary objective: Deploy customized malware on target systems to maintain undetected presence.
+
+
+

@@ -1,0 +1,26 @@
+# Two Factor Authentication
+---------------------------
+- Implemented by popular online services like Google, Facebook, Twitter, LinkedIn, Apple, and Microsoft for enhanced account security.
+- Requires a second token, in addition to username/password or PIN, to verify identity.
+- Second token can be:
+  - Physical object (e.g., credit card, mobile phone, fob).
+  - Biometric scan (e.g., fingerprint, facial or voice recognition).
+  - Verification code sent via SMS or email.
+
+
+# Open Authorization (OAuth)
+----------------------------
+- Instead of sharing your password with third-party applications, OAuth allows you to use your credentials from platforms like LinkedIn, Google, Facebook, or GitHub.
+- This simplifies the login process and enhances security by reducing the need to expose your password to multiple services.
+- Users can seamlessly access third-party applications without the hassle of managing separate login credentials, promoting ease of use and convenience.
+
+
+# Email and Web Browser Privacy
+-------------------------------
+- Offered by popular web browsers like Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, and Safari.
+- Known by different names such as InPrivate, Incognito, Private tab/window, and Private browsing.
+- When enabled, disables cookies and removes temporary internet files, deleting browsing history upon window/program closure.
+- Aims to prevent others from gathering information about online activities and displaying targeted ads.
+- Despite privacy measures, companies continually develop new methods like user fingerprinting to track online behavior.
+
+
